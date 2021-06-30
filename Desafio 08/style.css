@@ -1,0 +1,32 @@
+body {
+    background-color: #252525;
+}
+
+.container {
+    color: red;
+    font-size: 10em;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;        
+}
+
+.container span {
+    -webkit-animation: heart 2s infinite linear;
+}
+
+@-webkit-keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+    22%, 25% {
+        transform: scale(1.2);
+    }
+    47%, 50% {
+        transform: scale(1.1);
+    }
+    72%, 75% {
+        transform: scale(1.2);
+    }
+}

@@ -1,0 +1,75 @@
+body {
+    background-color: #252525;
+}
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;    
+}
+
+.container span {
+    font-family: Lato, sans-serif;
+    color: #474747;
+    text-shadow: 0 0 0 #000;
+    margin: 0 0.1em;
+    font-size: 5em;
+}
+
+.container span:nth-of-type(1) {
+    -webkit-animation: spotlight 1s infinite ease-in;
+}
+
+.container span:nth-of-type(2) {
+    -webkit-animation: spotlight 1s infinite 0.09s ease-in;
+}
+
+.container span:nth-of-type(3) {
+    -webkit-animation: spotlight 1s infinite 0.18s ease-in;
+}
+
+.container span:nth-of-type(4) {
+    -webkit-animation: spotlight 1s infinite 0.27s ease-in;
+}
+
+.container span:nth-of-type(5) {
+    -webkit-animation: spotlight 1s infinite 0.36s ease-in;
+}
+
+.container span:nth-of-type(6) {
+    -webkit-animation: spotlight 1s infinite 0.45s ease-in;
+}
+
+.container span:nth-of-type(7) {
+    -webkit-animation: spotlight 1s infinite 0.54s ease-in;
+}
+
+
+.container span:nth-of-type(8) {
+    -webkit-animation: spotlight 1s infinite 0.63s ease-in;
+}
+
+.container span:nth-of-type(9) {
+    -webkit-animation: spotlight 1s infinite 0.72s ease-in;
+}
+
+.container span:nth-of-type(10) {
+    -webkit-animation: spotlight 1s infinite 0.81s ease-in;
+}
+
+.container span:nth-of-type(11) {
+    -webkit-animation: spotlight 1s infinite 1s ease-in;
+}
+
+@-webkit-keyframes spotlight {
+    0% {
+        color: #d6d436;
+        text-shadow: 0 0 8px #d6d436;
+    }
+    20% {
+        color: #474747;
+        text-shadow: 0 0 0 #000;
+    }
+}

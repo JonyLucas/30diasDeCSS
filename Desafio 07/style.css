@@ -1,0 +1,121 @@
+body {
+    background-color: #AF0CDA;
+}
+
+.container {
+    width: 8em;
+    height: 15%;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    left: 45%;
+}
+
+.block {
+    width: 3em;
+    height: 3em;
+    background-color: white;
+    border-radius: 10%;
+    margin: 10px;
+    position: absolute;
+}
+
+.block:nth-of-type(1) {
+    top: 0em;
+    left: 0em;
+    -webkit-animation: block1 3s infinite 0.2s ease-in;
+    /* -webkit-animation: chase 2s infinite 0.7s ease-in; */
+}
+
+@-webkit-keyframes block1 {
+    0%, 82.5%, 100% {
+        top: 0em;
+        left: 0em;
+    }
+    12.5%, 25% {
+        top: 0em;
+        left: 4em;
+    }
+    37.5%, 50% {
+        top: 4em;
+        left: 4em;
+    }
+    62.5%, 75% {
+        top: 4em;
+        left: 0em;
+    }
+}
+
+.block:nth-of-type(2) {
+    top: 0em;
+    left: 4em;
+    -webkit-animation: block2 3s infinite 0.3s ease-in;
+    /* -webkit-animation: chase 2s infinite 1.4s ease-in; */
+}
+
+@-webkit-keyframes block2 {
+    0%, 82.5%, 100% {
+        top: 0em;
+        left: 4em;
+    }
+    12.5%, 25% {
+        top: 4em;
+        left: 4em;
+    }
+    37.5%, 50% {
+        top: 4em;
+        left: 0em;
+    }
+    62.5%, 75% {
+        top: 0em;
+        left: 0em;
+    }
+}
+
+.block:nth-of-type(3) {
+    top: 4em;
+    left: 4em;
+    -webkit-animation: block3 3s infinite 0.1s ease-in;
+    /* -webkit-animation: chase 2s infinite ease-in; */
+}
+
+@-webkit-keyframes block3 {
+    0%, 82.5%, 100% {       
+        top: 4em;
+        left: 4em;
+    }
+    12.5%, 25% {
+        top: 4em;
+        left: 0em;
+    }
+    37.5%, 50% {
+        top: 0em;
+        left: 0em;
+    }
+    62.5%, 75% {
+        top: 0em;
+        left: 4em;
+    }
+}
+
+@keyframes chase
+{
+    0% {top: 0; left: 0;}
+
+    12.5% { top: 0; left: 50%;}
+
+    25% { top: 0; left: 50%;}
+
+    37.5% { top: 50%; left: 50%;}
+
+    50% { top: 50%; left: 50%;}
+
+    62.5% { top: 50% ; left: 0;}
+
+    75% { top: 50% ; left: 0;}
+
+    82.5% { top: 0; left: 0;}
+
+    100% { top: 0; left: 0;}
+}
